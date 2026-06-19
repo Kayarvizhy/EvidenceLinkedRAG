@@ -1,0 +1,32 @@
+{
+  "Dense Retrieval + LLM_hotpotqa": {
+    "Precision": 1.5,
+    "F1": 2.3,
+    "RougeL": 2.3
+  },
+  "Standard RAG_hotpotqa": {
+    "Precision": 3.0,
+    "F1": 6.3,
+    "RougeL": 6.3
+  },
+  "Adaptive RAG (Ours)_hotpotqa": {
+    "Precision": 2.9,
+    "F1": 25.0,
+    "RougeL": 25.0
+  },
+  "Dense Retrieval + LLM_wikihow": {
+    "Precision": 0.4,
+    "F1": 0.6,
+    "RougeL": 0.6
+  },
+  "Standard RAG_wikihow": {
+    "Precision": 7.3,
+    "F1": 13.4,
+    "RougeL": 10.7
+  },
+  "Adaptive RAG (Ours)_wikihow": {
+    "Precision": 16.7,
+    "F1": 19.0,
+    "RougeL": 19.0
+  }
+}

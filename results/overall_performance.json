@@ -1,0 +1,58 @@
+{
+  "BM25 + LLM": {
+    "HotpotQA": {
+      "f1_mean": 5.8,
+      "f1_std": 9.7,
+      "halluc_mean": 57.3,
+      "n": 50
+    },
+    "WikiHow": {
+      "f1_mean": 25.1,
+      "f1_std": 8.0,
+      "halluc_mean": 32.4,
+      "n": 20
+    }
+  },
+  "Standard RAG": {
+    "HotpotQA": {
+      "f1_mean": 13.0,
+      "f1_std": 13.5,
+      "halluc_mean": 35.6,
+      "n": 50
+    },
+    "WikiHow": {
+      "f1_mean": 24.3,
+      "f1_std": 4.3,
+      "halluc_mean": 17.7,
+      "n": 20
+    }
+  },
+  "RAG + Reranker": {
+    "HotpotQA": {
+      "f1_mean": 14.0,
+      "f1_std": 13.8,
+      "halluc_mean": 36.0,
+      "n": 50
+    },
+    "WikiHow": {
+      "f1_mean": 14.4,
+      "f1_std": 14.6,
+      "halluc_mean": 10.8,
+      "n": 20
+    }
+  },
+  "Adaptive RAG (Ours)": {
+    "HotpotQA": {
+      "f1_mean": 24.9,
+      "f1_std": 39.4,
+      "halluc_mean": 41.5,
+      "n": 50
+    },
+    "WikiHow": {
+      "f1_mean": 21.3,
+      "f1_std": 17.8,
+      "halluc_mean": 34.0,
+      "n": 20
+    }
+  }
+}

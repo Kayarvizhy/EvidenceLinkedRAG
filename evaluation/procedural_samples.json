@@ -1,0 +1,32 @@
+[
+  {
+    "query": "How to learn a new language?",
+    "answer": "To learn a new language effectively, start by mastering basic vocabulary and common phrases through flashcards or language apps like Duolingo. Practice listening by watching movies or podcasts in the target language and try to speak with native speakers as often as possible. Study grammar rules gradually and immerse yourself in the language daily by reading books or articles. Consistency and daily practice are the most important factors in achieving fluency.",
+    "type": "procedural",
+    "level": "medium"
+  },
+  {
+    "query": "How to train for a marathon?",
+    "answer": "To train for a marathon, start with a base level of running fitness and gradually increase your weekly mileage over a period of sixteen to twenty weeks. Follow a structured training plan that includes long runs on weekends, shorter runs during the week, and rest days for recovery. Incorporate cross-training activities like cycling or swimming to build overall fitness and prevent injury. Pay attention to nutrition and hydration, especially during long runs, and taper your training in the final two weeks before race day.",
+    "type": "procedural",
+    "level": "medium"
+  },
+  {
+    "query": "How to fix a leaky faucet?",
+    "answer": "To fix a leaky faucet, start by turning off the water supply valves under the sink and turning on the faucet to release any remaining pressure. Remove the faucet handle by unscrewing the decorative cap and handle screw, then use a wrench to remove the packing nut and pull out the stem. Inspect the washer and O-ring at the bottom of the stem and replace them if they are worn or damaged. Reassemble the faucet in reverse order, turn the water supply back on, and check for leaks.",
+    "type": "procedural",
+    "level": "medium"
+  },
+  {
+    "query": "How to build a morning routine?",
+    "answer": "To build an effective morning routine, start by setting a consistent wake-up time every day including weekends to regulate your body clock. Begin with a glass of water to rehydrate after sleep, then incorporate activities that energize and focus you such as exercise, journaling, or meditation. Avoid checking your phone or email immediately upon waking as this can increase stress and distraction. Prepare as much as possible the night before, such as laying out clothes or preparing breakfast, so your morning flows smoothly and without rushing.",
+    "type": "procedural",
+    "level": "medium"
+  },
+  {
+    "query": "How to start a small business?",
+    "answer": "To start a small business, begin by identifying a viable business idea that solves a problem or meets a need in the market. Conduct thorough market research to understand your target customers and competitors, then write a detailed business plan outlining your goals, strategies, and financial projections. Register your business legally, obtain any necessary licenses or permits, and set up a dedicated business bank account. Build your brand identity, create an online presence, and start marketing your products or services to attract your first customers.",
+    "type": "procedural",
+    "level": "medium"
+  }
+]

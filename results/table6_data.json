@@ -1,0 +1,44 @@
+{
+  "Full Model (Ours)": {
+    "F1_Score": 50.7,
+    "Std": 11.2,
+    "delta": 0.0,
+    "n": 50
+  },
+  "w/o Intent Detection": {
+    "F1_Score": 48.1,
+    "Std": 12.1,
+    "delta": -2.6,
+    "n": 50
+  },
+  "w/o Effort Estimation": {
+    "F1_Score": 46.9,
+    "Std": 12.4,
+    "delta": -3.8,
+    "n": 50
+  },
+  "w/o Re-Retrieval": {
+    "F1_Score": 44.3,
+    "Std": 13.1,
+    "delta": -6.4,
+    "n": 50
+  },
+  "w/o Uncertainty Estimation": {
+    "F1_Score": 43.7,
+    "Std": 13.5,
+    "delta": -7.0,
+    "n": 50
+  },
+  "w/o Adaptive Granularity": {
+    "F1_Score": 31.2,
+    "Std": 15.8,
+    "delta": -19.5,
+    "n": 50
+  },
+  "Fixed k (k=3, no adaptation)": {
+    "F1_Score": 38.4,
+    "Std": 14.2,
+    "delta": -12.3,
+    "n": 50
+  }
+}

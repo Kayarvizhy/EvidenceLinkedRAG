@@ -1,0 +1,22 @@
+{
+  "Factual": {
+    "Standard_RAG": 11.7,
+    "Adaptive_RAG": 16.7,
+    "delta": 5.0,
+    "n": 50
+  },
+  "Multi-hop": {
+    "Standard_RAG": 17.5,
+    "Adaptive_RAG": 22.1,
+    "delta": 4.6,
+    "n": 50
+  },
+  "Procedural": {
+    "Standard_RAG": 24.3,
+    "Adaptive_RAG": 21.3,
+    "Adaptive_G3_Fixed": 26.8,
+    "delta_adaptive": -3.0,
+    "delta_g3_fix": 2.5,
+    "n": 50
+  }
+}

@@ -1,0 +1,14 @@
+venv/
+corpus/
+models/
+*.csv
+*.pkl
+*.bin
+*.pt
+*.index
+*.onnx
+*.h5
+*.ot
+__pycache__/
+*.pyc
+.env

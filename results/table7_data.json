@@ -1,0 +1,26 @@
+{
+  "G1 (Sentence)": {
+    "F1 Score": 50.0,
+    "Std": 39.3,
+    "Dataset": "HotpotQA + WikiHow",
+    "Note": "Best for short factual lookups"
+  },
+  "G2 (Paragraph)": {
+    "F1 Score": 54.6,
+    "Std": 43.4,
+    "Dataset": "HotpotQA + WikiHow",
+    "Note": "Best for multi-hop reasoning"
+  },
+  "G3 (Section)": {
+    "F1 Score": 54.0,
+    "Std": 43.0,
+    "Dataset": "HotpotQA + WikiHow",
+    "Note": "Best for procedural/long-form"
+  },
+  "Adaptive (Ours)": {
+    "F1 Score": 63.8,
+    "Std": 38.2,
+    "Dataset": "HotpotQA + WikiHow",
+    "Note": "Selects granularity per query"
+  }
+}

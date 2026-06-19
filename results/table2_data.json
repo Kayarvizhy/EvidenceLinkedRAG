@@ -1,0 +1,38 @@
+{
+  "Dense Retrieval + LLM": {
+    "overlap": [
+      0.25,
+      0.0,
+      0.2
+    ],
+    "unsupported": [
+      0.6875,
+      1.0,
+      0.8
+    ]
+  },
+  "Standard RAG": {
+    "overlap": [
+      0.6666666666666666,
+      0.25,
+      0.8
+    ],
+    "unsupported": [
+      0.2222222222222222,
+      0.625,
+      0.2
+    ]
+  },
+  "Adaptive RAG (Ours)": {
+    "overlap": [
+      1.0,
+      0.5,
+      1.0
+    ],
+    "unsupported": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  }
+}
