@@ -1,0 +1,50 @@
+detected intents: {'procedural': 100}
+700 generations to run, 0 cached
+[25/700] bm25     q  124 f1=0.08 elapsed 7 min, remaining about 198 min
+[50/700] bm25     q  149 f1=0.32 elapsed 15 min, remaining about 189 min
+[75/700] bm25     q  174 f1=0.29 elapsed 23 min, remaining about 188 min
+[100/700] bm25     q  199 f1=0.18 elapsed 31 min, remaining about 186 min
+[125/700] fixed    q  124 f1=0.03 elapsed 39 min, remaining about 179 min
+[150/700] fixed    q  149 f1=0.40 elapsed 47 min, remaining about 173 min
+[175/700] fixed    q  174 f1=0.22 elapsed 56 min, remaining about 167 min
+[200/700] fixed    q  199 f1=0.09 elapsed 64 min, remaining about 160 min
+[225/700] rerank   q  124 f1=0.00 elapsed 72 min, remaining about 152 min
+[250/700] rerank   q  149 f1=0.40 elapsed 81 min, remaining about 145 min
+[275/700] rerank   q  174 f1=0.27 elapsed 89 min, remaining about 138 min
+[300/700] rerank   q  199 f1=0.18 elapsed 97 min, remaining about 130 min
+[325/700] strong   q  124 f1=0.07 elapsed 105 min, remaining about 122 min
+[350/700] strong   q  149 f1=0.16 elapsed 114 min, remaining about 114 min
+[375/700] strong   q  174 f1=0.28 elapsed 122 min, remaining about 106 min
+[400/700] strong   q  199 f1=0.10 elapsed 130 min, remaining about 98 min
+[425/700] uamg_v1  q  124 f1=0.09 elapsed 145 min, remaining about 94 min
+[450/700] uamg_v1  q  149 f1=0.38 elapsed 159 min, remaining about 88 min
+[475/700] uamg_v1  q  174 f1=0.26 elapsed 174 min, remaining about 82 min
+[500/700] uamg_v1  q  199 f1=0.21 elapsed 188 min, remaining about 75 min
+[525/700] hop1     q  124 f1=0.07 elapsed 191 min, remaining about 64 min
+[550/700] hop1     q  149 f1=0.18 elapsed 194 min, remaining about 53 min
+[575/700] hop1     q  174 f1=0.28 elapsed 198 min, remaining about 43 min
+[600/700] hop1     q  199 f1=0.10 elapsed 203 min, remaining about 34 min
+[625/700] full     q  124 f1=0.07 elapsed 203 min, remaining about 24 min
+[650/700] full     q  149 f1=0.18 elapsed 203 min, remaining about 16 min
+[675/700] full     q  174 f1=0.28 elapsed 203 min, remaining about 8 min
+[700/700] full     q  199 f1=0.10 elapsed 203 min, remaining about 0 min
+
+wikihow / test: n = 100; complete systems: ['bm25', 'fixed', 'rerank', 'strong', 'uamg_v1', 'hop1', 'full']; incomplete: ['full_v', 'full_vh', 'full_vr', 'strong_v', 'fixed_v']
+
+system                              EM        F1    RougeL  Contains   Overlap   Unsupp.  Evidence  ctx tok  calls  latency s
+BM25 + LLM                         0.0      22.0      12.9       0.0      80.1      27.0      85.0     1050   1.00      18.58
+Fixed RAG (k=5)                    0.0      19.7      11.4       0.0      80.7      26.4      36.0     1113   1.00      19.89
+RAG + Reranker                     0.0      20.6      12.1       0.0      80.9      26.2      38.0     1180   1.00      19.93
+Strong reranker baseline           0.0      23.8      13.7       0.0      82.9      23.2      99.0     1051   1.00      19.92
+Heuristic Adaptive RAG              0.0      20.4      12.1       0.0      90.4      13.3      45.0     3332   1.00      34.41
+Proposed, no second hop            0.0      23.8      13.7       0.0      82.1      24.6     100.0     1062   1.00      20.51
+Proposed retrieval                 0.0      23.8      13.7       0.0      82.1      24.6     100.0     1062   1.00      20.51
+
+Proposed retrieval minus other system, paired bootstrap 95% CI (* = interval excludes zero)
+                                                  F1                      EM                 Overlap             Unsupported
+BM25 + LLM                      +1.8 [ +0.5,  +3.1]*    +0.0 [ +0.0,  +0.0]     +2.0 [ +0.2,  +3.8]*    -2.4 [ -4.7,  +0.0] 
+Fixed RAG (k=5)                 +4.1 [ +2.5,  +5.6]*    +0.0 [ +0.0,  +0.0]     +1.4 [ -0.7,  +3.5]     -1.8 [ -4.7,  +1.1] 
+RAG + Reranker                  +3.2 [ +1.5,  +4.8]*    +0.0 [ +0.0,  +0.0]     +1.2 [ -0.7,  +3.2]     -1.6 [ -4.4,  +1.0] 
+Strong reranker baseline        +0.0 [ -0.6,  +0.8]     +0.0 [ +0.0,  +0.0]     -0.8 [ -1.8,  +0.3]     +1.4 [ +0.0,  +2.8]*
+Heuristic Adaptive RAG           +3.4 [ +1.9,  +4.9]*    +0.0 [ +0.0,  +0.0]     -8.3 [ -9.9,  -6.7]*   +11.3 [ +9.2, +13.5]*
+Proposed, no second hop         +0.0 [ +0.0,  +0.0]     +0.0 [ +0.0,  +0.0]     +0.0 [ +0.0,  +0.0]     +0.0 [ +0.0,  +0.0] 

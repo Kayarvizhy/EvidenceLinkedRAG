@@ -1,0 +1,508 @@
+{
+ "split": "tune",
+ "n": 500,
+ "config": {
+  "k": 5,
+  "first_stage": 100,
+  "rrf_k": 60,
+  "pool": 50,
+  "bridges": 3,
+  "reserved_slots": 1,
+  "rerank_pool_baseline": 20
+ },
+ "systems": {
+  "BM25 (as in the paper: text, split tokens)": {
+   "k": 5,
+   "recall": 53.0,
+   "both": 24.2,
+   "answer": 53.96145610278372,
+   "tokens": 408.1,
+   "both_bridge": 22.524752475247524,
+   "both_comparison": 31.25,
+   "d_both_vs_fixed": [
+    -0.082,
+    -0.134,
+    -0.034
+   ],
+   "d_both_vs_reranker": [
+    -0.222,
+    -0.27,
+    -0.172
+   ],
+   "d_both_vs_strong": [
+    -0.29,
+    -0.338,
+    -0.242
+   ]
+  },
+  "BM25 (title + text, word tokens)": {
+   "k": 5,
+   "recall": 65.8,
+   "both": 40.0,
+   "answer": 64.45396145610277,
+   "tokens": 393.352,
+   "both_bridge": 37.12871287128713,
+   "both_comparison": 52.083333333333336,
+   "d_both_vs_fixed": [
+    0.076,
+    0.026,
+    0.126
+   ],
+   "d_both_vs_reranker": [
+    -0.064,
+    -0.112,
+    -0.016
+   ],
+   "d_both_vs_strong": [
+    -0.132,
+    -0.182,
+    -0.084
+   ]
+  },
+  "Fixed RAG: dense, text only": {
+   "k": 5,
+   "recall": 61.9,
+   "both": 32.4,
+   "answer": 57.601713062098504,
+   "tokens": 381.422,
+   "both_bridge": 28.217821782178216,
+   "both_comparison": 50.0,
+   "d_both_vs_fixed": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "d_both_vs_reranker": [
+    -0.14,
+    -0.176,
+    -0.104
+   ],
+   "d_both_vs_strong": [
+    -0.208,
+    -0.248,
+    -0.168
+   ]
+  },
+  "Dense, title + text": {
+   "k": 5,
+   "recall": 63.0,
+   "both": 35.0,
+   "answer": 57.81584582441114,
+   "tokens": 386.796,
+   "both_bridge": 27.970297029702973,
+   "both_comparison": 64.58333333333334,
+   "d_both_vs_fixed": [
+    0.026,
+    0.006,
+    0.046
+   ],
+   "d_both_vs_reranker": [
+    -0.114,
+    -0.148,
+    -0.08
+   ],
+   "d_both_vs_strong": [
+    -0.182,
+    -0.22,
+    -0.144
+   ]
+  },
+  "RAG + Reranker: dense top-20 -> cross-encoder": {
+   "k": 5,
+   "recall": 71.0,
+   "both": 46.400000000000006,
+   "answer": 69.80728051391864,
+   "tokens": 388.818,
+   "both_bridge": 39.10891089108911,
+   "both_comparison": 77.08333333333334,
+   "d_both_vs_fixed": [
+    0.14,
+    0.104,
+    0.176
+   ],
+   "d_both_vs_reranker": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "d_both_vs_strong": [
+    -0.068,
+    -0.096,
+    -0.042
+   ]
+  },
+  "Strong reranker baseline: dense(title) top-50 -> cross-encoder": {
+   "k": 5,
+   "recall": 74.9,
+   "both": 53.2,
+   "answer": 72.59100642398288,
+   "tokens": 392.482,
+   "both_bridge": 44.306930693069305,
+   "both_comparison": 90.625,
+   "d_both_vs_fixed": [
+    0.208,
+    0.168,
+    0.248
+   ],
+   "d_both_vs_reranker": [
+    0.068,
+    0.042,
+    0.096
+   ],
+   "d_both_vs_strong": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "PROPOSED hop 1: fusion (BM25+dense, paragraph+sentence) -> cross-encoder": {
+   "k": 5,
+   "recall": 81.2,
+   "both": 63.4,
+   "answer": 76.87366167023555,
+   "tokens": 390.318,
+   "both_bridge": 55.940594059405946,
+   "both_comparison": 94.79166666666666,
+   "d_both_vs_fixed": [
+    0.31,
+    0.264,
+    0.356
+   ],
+   "d_both_vs_reranker": [
+    0.17,
+    0.132,
+    0.21
+   ],
+   "d_both_vs_strong": [
+    0.102,
+    0.07,
+    0.13404999999999928
+   ]
+  },
+  "PROPOSED full: hop 1 + title-linked second hop": {
+   "k": 5,
+   "recall": 90.0,
+   "both": 81.0,
+   "answer": 88.6509635974304,
+   "tokens": 378.232,
+   "both_bridge": 77.97029702970298,
+   "both_comparison": 93.75,
+   "d_both_vs_fixed": [
+    0.486,
+    0.438,
+    0.532
+   ],
+   "d_both_vs_reranker": [
+    0.346,
+    0.3,
+    0.392
+   ],
+   "d_both_vs_strong": [
+    0.278,
+    0.234,
+    0.322
+   ]
+  },
+  "Heuristic Adaptive RAG (policy k)": {
+   "k": 7.46,
+   "recall": 66.10000000000001,
+   "both": 39.2,
+   "answer": 62.526766595289075,
+   "tokens": 581.786,
+   "both_bridge": 33.16831683168317,
+   "both_comparison": 64.58333333333334,
+   "d_both_vs_fixed": [
+    0.068,
+    0.046,
+    0.092
+   ],
+   "d_both_vs_reranker": [
+    -0.072,
+    -0.104,
+    -0.04
+   ],
+   "d_both_vs_strong": [
+    -0.14,
+    -0.178,
+    -0.102
+   ]
+  },
+  "Fixed RAG at k=10": {
+   "k": 10,
+   "recall": 68.0,
+   "both": 42.6,
+   "answer": 65.52462526766595,
+   "tokens": 795.738,
+   "both_bridge": 36.633663366336634,
+   "both_comparison": 67.70833333333334,
+   "d_both_vs_fixed": [
+    0.102,
+    0.076,
+    0.13
+   ],
+   "d_both_vs_reranker": [
+    -0.038,
+    -0.068,
+    -0.008
+   ],
+   "d_both_vs_strong": [
+    -0.106,
+    -0.142,
+    -0.07
+   ]
+  },
+  "RAG + Reranker at k=10": {
+   "k": 10,
+   "recall": 73.5,
+   "both": 51.0,
+   "answer": 71.73447537473233,
+   "tokens": 818.928,
+   "both_bridge": 44.306930693069305,
+   "both_comparison": 79.16666666666666,
+   "d_both_vs_fixed": [
+    0.186,
+    0.15,
+    0.222
+   ],
+   "d_both_vs_reranker": [
+    0.046,
+    0.028,
+    0.066
+   ],
+   "d_both_vs_strong": [
+    -0.022,
+    -0.054,
+    0.01
+   ]
+  },
+  "PROPOSED full at k=3": {
+   "k": 3,
+   "recall": 79.5,
+   "both": 62.0,
+   "answer": 78.80085653104925,
+   "tokens": 213.644,
+   "both_bridge": 60.148514851485146,
+   "both_comparison": 69.79166666666666,
+   "d_both_vs_fixed": [
+    0.296,
+    0.24,
+    0.35
+   ],
+   "d_both_vs_reranker": [
+    0.156,
+    0.102,
+    0.21
+   ],
+   "d_both_vs_strong": [
+    0.088,
+    0.032,
+    0.142
+   ]
+  }
+ },
+ "ablation": {
+  "full method": {
+   "k": 5,
+   "recall": 90.0,
+   "both": 81.0,
+   "answer": 88.6509635974304,
+   "tokens": 378.232,
+   "both_bridge": 77.97029702970298,
+   "both_comparison": 93.75,
+   "d_both_vs_fixed": [
+    0.486,
+    0.438,
+    0.532
+   ],
+   "d_both_vs_reranker": [
+    0.346,
+    0.3,
+    0.392
+   ],
+   "d_both_vs_strong": [
+    0.278,
+    0.234,
+    0.322
+   ],
+   "d_both_vs_full": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "no second hop": {
+   "k": 5,
+   "recall": 81.2,
+   "both": 63.4,
+   "answer": 76.87366167023555,
+   "tokens": 390.318,
+   "both_bridge": 55.940594059405946,
+   "both_comparison": 94.79166666666666,
+   "d_both_vs_fixed": [
+    0.31,
+    0.264,
+    0.356
+   ],
+   "d_both_vs_reranker": [
+    0.17,
+    0.132,
+    0.21
+   ],
+   "d_both_vs_strong": [
+    0.102,
+    0.07,
+    0.13404999999999928
+   ],
+   "d_both_vs_full": [
+    -0.176,
+    -0.212,
+    -0.14
+   ]
+  },
+  "second hop scored by question only (no path)": {
+   "k": 5,
+   "recall": 88.6,
+   "both": 78.0,
+   "answer": 85.86723768736617,
+   "tokens": 394.874,
+   "both_bridge": 74.00990099009901,
+   "both_comparison": 94.79166666666666,
+   "d_both_vs_fixed": [
+    0.456,
+    0.41,
+    0.5
+   ],
+   "d_both_vs_reranker": [
+    0.316,
+    0.274,
+    0.358
+   ],
+   "d_both_vs_strong": [
+    0.248,
+    0.206,
+    0.29
+   ],
+   "d_both_vs_full": [
+    -0.03,
+    -0.058,
+    -0.002
+   ]
+  },
+  "no sentence-level lists": {
+   "k": 5,
+   "recall": 89.9,
+   "both": 81.0,
+   "answer": 88.43683083511777,
+   "tokens": 377.194,
+   "both_bridge": 77.97029702970298,
+   "both_comparison": 93.75,
+   "d_both_vs_fixed": [
+    0.486,
+    0.438,
+    0.532
+   ],
+   "d_both_vs_reranker": [
+    0.346,
+    0.3,
+    0.392
+   ],
+   "d_both_vs_strong": [
+    0.278,
+    0.234,
+    0.322
+   ],
+   "d_both_vs_full": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "no BM25 lists (dense only)": {
+   "k": 5,
+   "recall": 87.2,
+   "both": 77.0,
+   "answer": 86.93790149892934,
+   "tokens": 383.702,
+   "both_bridge": 73.76237623762376,
+   "both_comparison": 90.625,
+   "d_both_vs_fixed": [
+    0.446,
+    0.4,
+    0.492
+   ],
+   "d_both_vs_reranker": [
+    0.306,
+    0.262,
+    0.35
+   ],
+   "d_both_vs_strong": [
+    0.238,
+    0.198,
+    0.28
+   ],
+   "d_both_vs_full": [
+    -0.04,
+    -0.06,
+    -0.02
+   ]
+  },
+  "no dense lists (BM25 only)": {
+   "k": 5,
+   "recall": 89.8,
+   "both": 80.80000000000001,
+   "answer": 88.0085653104925,
+   "tokens": 379.442,
+   "both_bridge": 77.97029702970298,
+   "both_comparison": 92.70833333333334,
+   "d_both_vs_fixed": [
+    0.484,
+    0.436,
+    0.53
+   ],
+   "d_both_vs_reranker": [
+    0.344,
+    0.3,
+    0.39
+   ],
+   "d_both_vs_strong": [
+    0.276,
+    0.23395000000000002,
+    0.322
+   ],
+   "d_both_vs_full": [
+    -0.002,
+    -0.014,
+    0.01
+   ]
+  },
+  "no cross-encoder on hop 1 (fusion order)": {
+   "k": 5,
+   "recall": 83.7,
+   "both": 72.2,
+   "answer": 82.65524625267666,
+   "tokens": 390.544,
+   "both_bridge": 70.04950495049505,
+   "both_comparison": 81.25,
+   "d_both_vs_fixed": [
+    0.398,
+    0.35,
+    0.444
+   ],
+   "d_both_vs_reranker": [
+    0.258,
+    0.21,
+    0.304
+   ],
+   "d_both_vs_strong": [
+    0.19,
+    0.144,
+    0.236
+   ],
+   "d_both_vs_full": [
+    -0.088,
+    -0.122,
+    -0.056
+   ]
+  }
+ }
+}

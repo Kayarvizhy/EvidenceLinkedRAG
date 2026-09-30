@@ -1,0 +1,20 @@
+
+wikihow / test: n = 100; complete systems: ['bm25', 'fixed', 'rerank', 'strong', 'uamg_v1', 'hop1', 'full']; incomplete: ['llm_hop', 'full_v', 'full_vh', 'full_vr', 'strong_v', 'fixed_v']
+
+system                              EM        F1    RougeL  Contains   Overlap   Unsupp.  Evidence  ctx tok  calls  latency s
+BM25 + LLM                         0.0      22.0      12.9       0.0      80.1      27.0      85.0     1050   1.00      18.58
+Fixed RAG (k=5)                    0.0      19.7      11.4       0.0      80.7      26.4      36.0     1113   1.00      19.89
+RAG + Reranker                     0.0      20.6      12.1       0.0      80.9      26.2      38.0     1180   1.00      19.93
+Strong reranker baseline           0.0      23.8      13.7       0.0      82.9      23.2      99.0     1051   1.00      19.92
+Heuristic Adaptive RAG             0.0      20.4      12.1       0.0      90.4      13.3      45.0     3332   1.00      34.41
+Proposed, no second hop            0.0      23.8      13.7       0.0      82.1      24.6     100.0     1062   1.00      20.51
+Proposed retrieval                 0.0      23.8      13.7       0.0      82.1      24.6     100.0     1062   1.00      20.51
+
+Proposed retrieval minus other system, paired bootstrap 95% CI (* = interval excludes zero)
+                                                  F1                      EM                 Overlap             Unsupported
+BM25 + LLM                      +1.8 [ +0.5,  +3.1]*    +0.0 [ +0.0,  +0.0]     +2.0 [ +0.2,  +3.8]*    -2.4 [ -4.7,  +0.0] 
+Fixed RAG (k=5)                 +4.1 [ +2.5,  +5.6]*    +0.0 [ +0.0,  +0.0]     +1.4 [ -0.7,  +3.5]     -1.8 [ -4.7,  +1.1] 
+RAG + Reranker                  +3.2 [ +1.5,  +4.8]*    +0.0 [ +0.0,  +0.0]     +1.2 [ -0.7,  +3.2]     -1.6 [ -4.4,  +1.0] 
+Strong reranker baseline        +0.0 [ -0.6,  +0.8]     +0.0 [ +0.0,  +0.0]     -0.8 [ -1.8,  +0.3]     +1.4 [ +0.0,  +2.8]*
+Heuristic Adaptive RAG          +3.4 [ +1.9,  +4.9]*    +0.0 [ +0.0,  +0.0]     -8.3 [ -9.9,  -6.7]*   +11.3 [ +9.2, +13.5]*
+Proposed, no second hop         +0.0 [ +0.0,  +0.0]     +0.0 [ +0.0,  +0.0]     +0.0 [ +0.0,  +0.0]     +0.0 [ +0.0,  +0.0] 

@@ -1,7 +1,19 @@
+# environments and caches
 venv/
-corpus/
+.venv/
+__pycache__/
+*.pyc
+.env
+
+# downloaded or derived data: rebuilt by download_data.py and prepare*.py
+data/
+cache/
 models/
-*.csv
+hf/
+lib/
+
+# legacy artefacts of the original code
+corpus/
 *.pkl
 *.bin
 *.pt
@@ -9,6 +21,3 @@ models/
 *.onnx
 *.h5
 *.ot
-__pycache__/
-*.pyc
-.env

@@ -1,0 +1,37 @@
+   title graph: 570629 edges; PPR discovers 15.0 passages per question
+computed in 2443s; 21.1 linked candidates per question
+
+hotpot retrieval, split = test, n = 1000 (bridge 802, comparison 198), corpus = 66581 paragraphs
+
+system                                                                      k  recall   both  answer  tokens      bridge  comparison  d(both) vs Fixed RAG [95% CI]
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+BM25 (as in the paper: text, split tokens)                                5.0    54.6   26.1    54.1     404        24.6        32.3  -9.0 [-12.7, -5.4]
+BM25 (title + text, word tokens)                                          5.0    67.5   42.0    64.0     396        38.3        57.1  +6.9 [+3.4, +10.3]
+Fixed RAG: dense, text only                                               5.0    62.1   35.1    55.1     372        28.9        60.1  +0.0 [+0.0, +0.0]
+Dense, title + text                                                       5.0    62.6   35.5    55.0     379        28.1        65.7  +0.4 [-1.0, +1.9]
+RAG + Reranker: dense top-20 -> cross-encoder                             5.0    71.2   47.7    65.5     383        41.6        72.2  +12.6 [+10.3, +15.0]
+Strong reranker baseline: dense(title) top-50 -> cross-encoder            5.0    75.4   54.3    70.2     393        47.0        83.8  +19.2 [+16.5, +22.0]
+PROPOSED hop 1: fusion (BM25+dense, paragraph+sentence) -> cross-encoder  5.0    82.1   65.0    74.7     396        58.0        93.4  +29.9 [+26.7, +33.1]
+PROPOSED full: hop 1 + title-linked second hop                            5.0    90.6   82.2    88.6     379        80.0        90.9  +47.1 [+43.6, +50.6]
+BRIDGE-style: hop 1 -> PPR over title links -> unified cross-encoder rerank  5.0    82.5   65.9    75.4     396        59.1        93.4  +30.8 [+27.6, +34.0]
+Heuristic Adaptive RAG: dense, k = 7/8/10 from keyword effort              7.4    66.0   40.8    60.4     565        34.4        66.7  +5.7 [+4.3, +7.2]
+Fixed RAG at k = 10                                                      10.0    69.1   45.7    64.1     778        39.8        69.7  +10.6 [+8.7, +12.6]
+RAG + Reranker at k = 10                                                 10.0    73.2   51.7    69.1     793        46.4        73.2  +16.6 [+14.3, +19.1]
+PROPOSED full at k = 3                                                    3.0    79.9   62.8    80.6     212        61.1        69.7  +27.7 [+23.8, +31.6]
+
+PROPOSED full, difference in 'both' at k = 5:
+   vs Fixed RAG                 +47.1 [+43.6, +50.6]
+   vs RAG + Reranker            +34.5 [+31.1, +37.9]
+   vs strong reranker baseline  +27.9 [+24.6, +31.1]
+   vs BRIDGE-style PPR          +16.3 [+13.5, +19.1]
+
+Ablation of the proposed method (k = 5); d = difference in 'both' to the full method
+   full method                                        recall  90.6  both  82.2  answer  88.6   
+   no second hop                                      recall  82.1  both  65.0  answer  74.7   -17.2 [-20.1, -14.4]
+   second hop scored by question only (no path)       recall  89.0  both  78.8  answer  85.9   -3.4 [-5.2, -1.6]
+   no sentence-level lists                            recall  90.2  both  81.5  answer  88.2   -0.7 [-1.4, +0.0]
+   no BM25 lists (dense only)                         recall  88.2  both  78.4  answer  87.0   -3.8 [-5.5, -2.2]
+   no dense lists (BM25 only)                         recall  89.9  both  81.1  answer  88.6   -1.1 [-2.0, -0.2]
+   no cross-encoder on hop 1 (fusion order)           recall  85.0  both  74.1  answer  84.3   -8.1 [-10.4, -5.9]
+
+saved results/retrieval_test.json

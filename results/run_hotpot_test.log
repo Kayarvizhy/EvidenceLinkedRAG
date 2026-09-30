@@ -1,0 +1,259 @@
+detected intents: {'factual': 498, 'analytical': 1, 'procedural': 1}
+5268 generations to run, 732 cached
+[25/5268] fixed    q  756 f1=1.00 elapsed 2 min, remaining about 337 min
+[50/5268] fixed    q  781 f1=0.00 elapsed 3 min, remaining about 336 min
+[75/5268] fixed    q  806 f1=1.00 elapsed 5 min, remaining about 337 min
+[100/5268] fixed    q  831 f1=0.00 elapsed 6 min, remaining about 335 min
+[125/5268] fixed    q  856 f1=0.00 elapsed 8 min, remaining about 335 min
+[150/5268] fixed    q  881 f1=1.00 elapsed 10 min, remaining about 348 min
+[175/5268] fixed    q  906 f1=0.00 elapsed 12 min, remaining about 350 min
+[200/5268] fixed    q  931 f1=0.11 elapsed 14 min, remaining about 358 min
+[225/5268] fixed    q  956 f1=0.80 elapsed 16 min, remaining about 353 min
+[250/5268] fixed    q  981 f1=1.00 elapsed 17 min, remaining about 351 min
+[275/5268] rerank   q  506 f1=0.00 elapsed 19 min, remaining about 346 min
+[300/5268] rerank   q  531 f1=1.00 elapsed 21 min, remaining about 343 min
+[325/5268] rerank   q  556 f1=1.00 elapsed 22 min, remaining about 339 min
+[350/5268] rerank   q  581 f1=0.00 elapsed 24 min, remaining about 337 min
+[375/5268] rerank   q  606 f1=0.00 elapsed 26 min, remaining about 334 min
+[400/5268] rerank   q  631 f1=0.00 elapsed 27 min, remaining about 331 min
+[425/5268] rerank   q  656 f1=0.57 elapsed 29 min, remaining about 328 min
+[450/5268] rerank   q  681 f1=0.50 elapsed 30 min, remaining about 326 min
+[475/5268] rerank   q  706 f1=0.00 elapsed 32 min, remaining about 323 min
+[500/5268] rerank   q  731 f1=0.24 elapsed 34 min, remaining about 321 min
+[525/5268] rerank   q  756 f1=1.00 elapsed 35 min, remaining about 318 min
+[550/5268] rerank   q  781 f1=0.00 elapsed 37 min, remaining about 316 min
+[575/5268] rerank   q  806 f1=0.00 elapsed 38 min, remaining about 314 min
+[600/5268] rerank   q  831 f1=0.00 elapsed 40 min, remaining about 312 min
+[625/5268] rerank   q  856 f1=0.00 elapsed 42 min, remaining about 309 min
+[650/5268] rerank   q  881 f1=1.00 elapsed 44 min, remaining about 310 min
+[675/5268] rerank   q  906 f1=0.00 elapsed 45 min, remaining about 308 min
+[700/5268] rerank   q  931 f1=0.18 elapsed 47 min, remaining about 309 min
+[725/5268] rerank   q  956 f1=0.80 elapsed 49 min, remaining about 308 min
+[750/5268] rerank   q  981 f1=1.00 elapsed 51 min, remaining about 305 min
+[775/5268] strong   q  506 f1=0.00 elapsed 52 min, remaining about 302 min
+[800/5268] strong   q  531 f1=1.00 elapsed 53 min, remaining about 298 min
+[825/5268] strong   q  556 f1=1.00 elapsed 55 min, remaining about 295 min
+[850/5268] strong   q  581 f1=0.00 elapsed 56 min, remaining about 291 min
+[875/5268] strong   q  606 f1=0.00 elapsed 57 min, remaining about 287 min
+[900/5268] strong   q  631 f1=0.00 elapsed 58 min, remaining about 284 min
+[925/5268] strong   q  656 f1=0.57 elapsed 60 min, remaining about 281 min
+[950/5268] strong   q  681 f1=0.00 elapsed 61 min, remaining about 278 min
+[975/5268] strong   q  706 f1=0.00 elapsed 63 min, remaining about 276 min
+[1000/5268] strong   q  731 f1=0.24 elapsed 64 min, remaining about 273 min
+[1025/5268] strong   q  756 f1=1.00 elapsed 65 min, remaining about 271 min
+[1050/5268] strong   q  781 f1=0.00 elapsed 66 min, remaining about 267 min
+[1075/5268] strong   q  806 f1=0.00 elapsed 68 min, remaining about 265 min
+[1100/5268] strong   q  831 f1=0.00 elapsed 69 min, remaining about 261 min
+[1125/5268] strong   q  856 f1=0.00 elapsed 71 min, remaining about 260 min
+[1150/5268] strong   q  881 f1=1.00 elapsed 72 min, remaining about 258 min
+[1175/5268] strong   q  906 f1=0.00 elapsed 73 min, remaining about 256 min
+[1200/5268] strong   q  931 f1=0.18 elapsed 75 min, remaining about 254 min
+[1225/5268] strong   q  956 f1=0.80 elapsed 76 min, remaining about 251 min
+[1250/5268] strong   q  981 f1=1.00 elapsed 77 min, remaining about 248 min
+[1275/5268] uamg_v1  q  506 f1=0.00 elapsed 79 min, remaining about 248 min
+[1300/5268] uamg_v1  q  531 f1=1.00 elapsed 82 min, remaining about 251 min
+[1325/5268] uamg_v1  q  556 f1=1.00 elapsed 85 min, remaining about 253 min
+[1350/5268] uamg_v1  q  581 f1=0.00 elapsed 88 min, remaining about 254 min
+[1375/5268] uamg_v1  q  606 f1=0.00 elapsed 90 min, remaining about 256 min
+[1400/5268] uamg_v1  q  631 f1=0.14 elapsed 93 min, remaining about 257 min
+[1425/5268] uamg_v1  q  656 f1=0.00 elapsed 96 min, remaining about 258 min
+[1450/5268] uamg_v1  q  681 f1=0.00 elapsed 99 min, remaining about 260 min
+[1475/5268] uamg_v1  q  706 f1=0.00 elapsed 101 min, remaining about 261 min
+[1500/5268] uamg_v1  q  731 f1=0.00 elapsed 104 min, remaining about 262 min
+[1525/5268] uamg_v1  q  756 f1=1.00 elapsed 107 min, remaining about 263 min
+[1550/5268] uamg_v1  q  781 f1=0.00 elapsed 110 min, remaining about 263 min
+[1575/5268] uamg_v1  q  806 f1=1.00 elapsed 113 min, remaining about 264 min
+[1600/5268] uamg_v1  q  831 f1=0.00 elapsed 116 min, remaining about 266 min
+[1625/5268] uamg_v1  q  856 f1=0.00 elapsed 119 min, remaining about 267 min
+[1650/5268] uamg_v1  q  881 f1=1.00 elapsed 122 min, remaining about 268 min
+[1675/5268] uamg_v1  q  906 f1=0.00 elapsed 125 min, remaining about 268 min
+[1700/5268] uamg_v1  q  931 f1=0.18 elapsed 128 min, remaining about 270 min
+[1725/5268] uamg_v1  q  956 f1=0.80 elapsed 131 min, remaining about 270 min
+[1750/5268] uamg_v1  q  981 f1=1.00 elapsed 134 min, remaining about 269 min
+[1775/5268] hop1     q  506 f1=0.00 elapsed 136 min, remaining about 268 min
+[1800/5268] hop1     q  531 f1=1.00 elapsed 137 min, remaining about 264 min
+[1825/5268] hop1     q  556 f1=1.00 elapsed 138 min, remaining about 261 min
+[1850/5268] hop1     q  581 f1=0.00 elapsed 139 min, remaining about 257 min
+[1875/5268] hop1     q  606 f1=0.00 elapsed 140 min, remaining about 253 min
+[1900/5268] hop1     q  631 f1=0.00 elapsed 141 min, remaining about 250 min
+[1925/5268] hop1     q  656 f1=0.57 elapsed 142 min, remaining about 247 min
+[1950/5268] hop1     q  681 f1=0.00 elapsed 143 min, remaining about 244 min
+[1975/5268] hop1     q  706 f1=0.00 elapsed 144 min, remaining about 241 min
+[2000/5268] hop1     q  731 f1=1.00 elapsed 146 min, remaining about 238 min
+[2025/5268] hop1     q  756 f1=1.00 elapsed 147 min, remaining about 235 min
+[2050/5268] hop1     q  781 f1=0.00 elapsed 148 min, remaining about 232 min
+[2075/5268] hop1     q  806 f1=0.00 elapsed 149 min, remaining about 230 min
+[2100/5268] hop1     q  831 f1=0.00 elapsed 150 min, remaining about 226 min
+[2125/5268] hop1     q  856 f1=0.00 elapsed 151 min, remaining about 223 min
+[2150/5268] hop1     q  881 f1=1.00 elapsed 152 min, remaining about 221 min
+[2175/5268] hop1     q  906 f1=0.00 elapsed 154 min, remaining about 219 min
+[2200/5268] hop1     q  931 f1=0.18 elapsed 155 min, remaining about 216 min
+[2225/5268] hop1     q  956 f1=0.00 elapsed 156 min, remaining about 214 min
+[2250/5268] hop1     q  981 f1=1.00 elapsed 157 min, remaining about 210 min
+[2275/5268] full     q  506 f1=0.00 elapsed 158 min, remaining about 208 min
+[2300/5268] full     q  531 f1=1.00 elapsed 160 min, remaining about 206 min
+[2325/5268] full     q  556 f1=1.00 elapsed 161 min, remaining about 204 min
+[2350/5268] full     q  581 f1=1.00 elapsed 163 min, remaining about 202 min
+[2375/5268] full     q  606 f1=1.00 elapsed 164 min, remaining about 200 min
+[2400/5268] full     q  631 f1=0.40 elapsed 166 min, remaining about 198 min
+[2425/5268] full     q  656 f1=1.00 elapsed 167 min, remaining about 196 min
+[2450/5268] full     q  681 f1=0.50 elapsed 168 min, remaining about 194 min
+[2475/5268] full     q  706 f1=0.00 elapsed 170 min, remaining about 192 min
+[2500/5268] full     q  731 f1=1.00 elapsed 171 min, remaining about 190 min
+[2525/5268] full     q  756 f1=1.00 elapsed 173 min, remaining about 188 min
+[2550/5268] full     q  781 f1=0.00 elapsed 174 min, remaining about 186 min
+[2575/5268] full     q  806 f1=1.00 elapsed 176 min, remaining about 184 min
+[2600/5268] full     q  831 f1=0.00 elapsed 177 min, remaining about 182 min
+[2625/5268] full     q  856 f1=0.00 elapsed 179 min, remaining about 180 min
+[2650/5268] full     q  881 f1=1.00 elapsed 181 min, remaining about 179 min
+[2675/5268] full     q  906 f1=0.00 elapsed 182 min, remaining about 177 min
+[2700/5268] full     q  931 f1=1.00 elapsed 184 min, remaining about 175 min
+[2725/5268] full     q  956 f1=0.80 elapsed 186 min, remaining about 173 min
+[2750/5268] full     q  981 f1=1.00 elapsed 187 min, remaining about 171 min
+[2775/5268] full_v   q  506 f1=0.00 elapsed 188 min, remaining about 169 min
+[2800/5268] full_v   q  531 f1=1.00 elapsed 188 min, remaining about 166 min
+[2825/5268] full_v   q  556 f1=1.00 elapsed 188 min, remaining about 163 min
+[2850/5268] full_v   q  581 f1=1.00 elapsed 188 min, remaining about 160 min
+[2875/5268] full_v   q  606 f1=1.00 elapsed 188 min, remaining about 157 min
+[2900/5268] full_v   q  631 f1=0.40 elapsed 188 min, remaining about 154 min
+[2925/5268] full_v   q  656 f1=1.00 elapsed 189 min, remaining about 151 min
+[2950/5268] full_v   q  681 f1=0.00 elapsed 189 min, remaining about 148 min
+[2975/5268] full_v   q  706 f1=0.00 elapsed 189 min, remaining about 146 min
+[3000/5268] full_v   q  731 f1=1.00 elapsed 189 min, remaining about 143 min
+[3025/5268] full_v   q  756 f1=1.00 elapsed 189 min, remaining about 140 min
+[3050/5268] full_v   q  781 f1=0.00 elapsed 189 min, remaining about 138 min
+[3075/5268] full_v   q  806 f1=1.00 elapsed 189 min, remaining about 135 min
+[3100/5268] full_v   q  831 f1=0.00 elapsed 190 min, remaining about 133 min
+[3125/5268] full_v   q  856 f1=0.00 elapsed 190 min, remaining about 130 min
+[3150/5268] full_v   q  881 f1=1.00 elapsed 190 min, remaining about 128 min
+[3175/5268] full_v   q  906 f1=0.00 elapsed 190 min, remaining about 125 min
+[3200/5268] full_v   q  931 f1=1.00 elapsed 190 min, remaining about 123 min
+[3225/5268] full_v   q  956 f1=0.80 elapsed 191 min, remaining about 121 min
+[3250/5268] full_v   q  981 f1=1.00 elapsed 191 min, remaining about 118 min
+[3275/5268] full_vh  q  506 f1=0.00 elapsed 191 min, remaining about 116 min
+[3300/5268] full_vh  q  531 f1=1.00 elapsed 191 min, remaining about 114 min
+[3325/5268] full_vh  q  556 f1=1.00 elapsed 191 min, remaining about 112 min
+[3350/5268] full_vh  q  581 f1=1.00 elapsed 191 min, remaining about 109 min
+[3375/5268] full_vh  q  606 f1=1.00 elapsed 191 min, remaining about 107 min
+[3400/5268] full_vh  q  631 f1=0.40 elapsed 191 min, remaining about 105 min
+[3425/5268] full_vh  q  656 f1=1.00 elapsed 191 min, remaining about 103 min
+[3450/5268] full_vh  q  681 f1=0.00 elapsed 191 min, remaining about 101 min
+[3475/5268] full_vh  q  706 f1=0.00 elapsed 192 min, remaining about 99 min
+[3500/5268] full_vh  q  731 f1=1.00 elapsed 192 min, remaining about 97 min
+[3525/5268] full_vh  q  756 f1=1.00 elapsed 192 min, remaining about 95 min
+[3550/5268] full_vh  q  781 f1=0.00 elapsed 192 min, remaining about 93 min
+[3575/5268] full_vh  q  806 f1=1.00 elapsed 192 min, remaining about 91 min
+[3600/5268] full_vh  q  831 f1=0.00 elapsed 192 min, remaining about 89 min
+[3625/5268] full_vh  q  856 f1=0.00 elapsed 192 min, remaining about 87 min
+[3650/5268] full_vh  q  881 f1=1.00 elapsed 192 min, remaining about 85 min
+[3675/5268] full_vh  q  906 f1=0.00 elapsed 192 min, remaining about 83 min
+[3700/5268] full_vh  q  931 f1=1.00 elapsed 193 min, remaining about 82 min
+[3725/5268] full_vh  q  956 f1=0.80 elapsed 193 min, remaining about 80 min
+[3750/5268] full_vh  q  981 f1=1.00 elapsed 193 min, remaining about 78 min
+[3775/5268] full_vr  q  506 f1=0.00 elapsed 193 min, remaining about 76 min
+[3800/5268] full_vr  q  531 f1=1.00 elapsed 193 min, remaining about 75 min
+[3825/5268] full_vr  q  556 f1=1.00 elapsed 193 min, remaining about 73 min
+[3850/5268] full_vr  q  581 f1=1.00 elapsed 193 min, remaining about 71 min
+[3875/5268] full_vr  q  606 f1=1.00 elapsed 193 min, remaining about 69 min
+[3900/5268] full_vr  q  631 f1=0.40 elapsed 193 min, remaining about 68 min
+[3925/5268] full_vr  q  656 f1=1.00 elapsed 193 min, remaining about 66 min
+[3950/5268] full_vr  q  681 f1=0.00 elapsed 194 min, remaining about 65 min
+[3975/5268] full_vr  q  706 f1=0.00 elapsed 194 min, remaining about 63 min
+[4000/5268] full_vr  q  731 f1=1.00 elapsed 194 min, remaining about 61 min
+[4025/5268] full_vr  q  756 f1=1.00 elapsed 194 min, remaining about 60 min
+[4050/5268] full_vr  q  781 f1=0.00 elapsed 194 min, remaining about 58 min
+[4075/5268] full_vr  q  806 f1=1.00 elapsed 194 min, remaining about 57 min
+[4100/5268] full_vr  q  831 f1=0.00 elapsed 194 min, remaining about 55 min
+[4125/5268] full_vr  q  856 f1=0.00 elapsed 194 min, remaining about 54 min
+[4150/5268] full_vr  q  881 f1=1.00 elapsed 195 min, remaining about 53 min
+[4175/5268] full_vr  q  906 f1=0.00 elapsed 195 min, remaining about 51 min
+[4200/5268] full_vr  q  931 f1=1.00 elapsed 195 min, remaining about 50 min
+[4225/5268] full_vr  q  956 f1=0.80 elapsed 195 min, remaining about 48 min
+[4250/5268] full_vr  q  981 f1=1.00 elapsed 196 min, remaining about 47 min
+[4275/5268] strong_v q  506 f1=0.00 elapsed 196 min, remaining about 45 min
+[4300/5268] strong_v q  531 f1=1.00 elapsed 196 min, remaining about 44 min
+[4325/5268] strong_v q  556 f1=1.00 elapsed 196 min, remaining about 43 min
+[4350/5268] strong_v q  581 f1=0.00 elapsed 196 min, remaining about 41 min
+[4375/5268] strong_v q  606 f1=0.00 elapsed 196 min, remaining about 40 min
+[4400/5268] strong_v q  631 f1=0.00 elapsed 197 min, remaining about 39 min
+[4425/5268] strong_v q  656 f1=0.57 elapsed 197 min, remaining about 38 min
+[4450/5268] strong_v q  681 f1=0.00 elapsed 197 min, remaining about 36 min
+[4475/5268] strong_v q  706 f1=0.00 elapsed 197 min, remaining about 35 min
+[4500/5268] strong_v q  731 f1=0.24 elapsed 197 min, remaining about 34 min
+[4525/5268] strong_v q  756 f1=1.00 elapsed 198 min, remaining about 32 min
+[4550/5268] strong_v q  781 f1=0.00 elapsed 198 min, remaining about 31 min
+[4575/5268] strong_v q  806 f1=0.00 elapsed 198 min, remaining about 30 min
+[4600/5268] strong_v q  831 f1=0.00 elapsed 198 min, remaining about 29 min
+[4625/5268] strong_v q  856 f1=0.00 elapsed 199 min, remaining about 28 min
+[4650/5268] strong_v q  881 f1=1.00 elapsed 199 min, remaining about 26 min
+[4675/5268] strong_v q  906 f1=0.00 elapsed 199 min, remaining about 25 min
+[4700/5268] strong_v q  931 f1=0.18 elapsed 199 min, remaining about 24 min
+[4725/5268] strong_v q  956 f1=0.80 elapsed 199 min, remaining about 23 min
+[4750/5268] strong_v q  981 f1=1.00 elapsed 199 min, remaining about 22 min
+[4775/5268] fixed_v  q  506 f1=0.00 elapsed 200 min, remaining about 21 min
+[4800/5268] fixed_v  q  531 f1=1.00 elapsed 200 min, remaining about 20 min
+[4825/5268] fixed_v  q  556 f1=1.00 elapsed 200 min, remaining about 18 min
+[4850/5268] fixed_v  q  581 f1=0.00 elapsed 201 min, remaining about 17 min
+[4875/5268] fixed_v  q  606 f1=0.00 elapsed 201 min, remaining about 16 min
+[4900/5268] fixed_v  q  631 f1=0.00 elapsed 201 min, remaining about 15 min
+[4925/5268] fixed_v  q  656 f1=0.00 elapsed 202 min, remaining about 14 min
+[4950/5268] fixed_v  q  681 f1=0.00 elapsed 202 min, remaining about 13 min
+[4975/5268] fixed_v  q  706 f1=0.00 elapsed 202 min, remaining about 12 min
+[5000/5268] fixed_v  q  731 f1=0.00 elapsed 202 min, remaining about 11 min
+[5025/5268] fixed_v  q  756 f1=1.00 elapsed 203 min, remaining about 10 min
+[5050/5268] fixed_v  q  781 f1=0.00 elapsed 203 min, remaining about 9 min
+[5075/5268] fixed_v  q  806 f1=1.00 elapsed 203 min, remaining about 8 min
+[5100/5268] fixed_v  q  831 f1=0.00 elapsed 204 min, remaining about 7 min
+[5125/5268] fixed_v  q  856 f1=0.00 elapsed 204 min, remaining about 6 min
+[5150/5268] fixed_v  q  881 f1=1.00 elapsed 204 min, remaining about 5 min
+[5175/5268] fixed_v  q  906 f1=0.00 elapsed 205 min, remaining about 4 min
+[5200/5268] fixed_v  q  931 f1=0.11 elapsed 205 min, remaining about 3 min
+[5225/5268] fixed_v  q  956 f1=0.80 elapsed 205 min, remaining about 2 min
+[5250/5268] fixed_v  q  981 f1=1.00 elapsed 205 min, remaining about 1 min
+[5268/5268] fixed_v  q  999 f1=0.00 elapsed 206 min, remaining about 0 min
+
+hotpot / test: n = 500; complete systems: ['bm25', 'fixed', 'rerank', 'strong', 'uamg_v1', 'hop1', 'full', 'full_v', 'full_vh', 'full_vr', 'strong_v', 'fixed_v']
+
+system                              EM        F1    RougeL  Contains   Overlap   Unsupp.  Evidence  ctx tok  calls  latency s
+BM25 + LLM                        34.8      49.8      49.8      46.4      85.2      10.5      42.4      393   1.00       6.07
+Fixed RAG (k=5)                   27.8      42.6      42.7      39.2      82.6      12.1      34.4      371   1.00       4.31
+RAG + Reranker                    32.2      49.5      49.4      46.0      85.5       9.3      49.6      382   1.00       4.00
+Strong reranker baseline          34.4      51.9      51.7      48.2      86.4       8.5      57.0      390   1.00       4.06
+Heuristic Adaptive RAG             30.0      44.8      44.8      40.8      88.1       7.0      42.2      564   1.40       6.51
+Proposed, no second hop           36.8      55.0      54.8      52.4      87.6       7.5      66.8      393   1.00       4.01
+Proposed retrieval                45.6      63.7      63.7      59.8      88.9       5.9      83.8      375   1.00       3.97
+Proposed + verification           45.8      63.9      64.0      60.0      91.1       3.7      84.6      388   1.07       4.28
+  verification: hint only         46.4      64.5      64.5      60.6      90.3       4.5      83.8      375   1.07       4.23
+  verification: context only      45.8      63.8      63.8      60.0      90.7       4.3      84.6      389   1.07       4.30
+Strong baseline + verif.          35.4      52.7      52.6      49.0      89.1       5.8      57.2      416   1.11       4.54
+Fixed RAG + verification          28.8      43.0      43.1      39.0      87.1       7.0      35.8      402   1.16       5.06
+
+Proposed + verification minus other system, paired bootstrap 95% CI (* = interval excludes zero)
+                                                  F1                      EM                 Overlap             Unsupported
+BM25 + LLM                     +14.1 [+10.6, +17.8]*   +11.0 [ +7.2, +14.8]*    +5.9 [ +3.6,  +8.4]*    -6.8 [ -9.1,  -4.6]*
+Fixed RAG (k=5)                +21.3 [+17.2, +25.3]*   +18.0 [+14.0, +22.2]*    +8.5 [ +6.1, +11.0]*    -8.4 [-10.7,  -6.1]*
+RAG + Reranker                 +14.4 [+10.8, +17.9]*   +13.6 [+10.0, +17.4]*    +5.6 [ +3.4,  +8.0]*    -5.6 [ -7.8,  -3.4]*
+Strong reranker baseline       +12.0 [ +8.5, +15.5]*   +11.4 [ +7.8, +15.2]*    +4.7 [ +2.8,  +6.8]*    -4.8 [ -6.8,  -3.0]*
+Heuristic Adaptive RAG          +19.2 [+15.2, +23.0]*   +15.8 [+11.8, +19.8]*    +3.1 [ +0.9,  +5.2]*    -3.3 [ -5.2,  -1.4]*
+Proposed, no second hop         +8.9 [ +5.9, +11.9]*    +9.0 [ +6.0, +12.4]*    +3.6 [ +1.6,  +5.6]*    -3.7 [ -5.7,  -1.9]*
+Proposed retrieval              +0.2 [ -0.8,  +1.3]     +0.2 [ -0.8,  +1.2]     +2.2 [ +1.0,  +3.6]*    -2.2 [ -3.5,  -1.1]*
+  verification: hint only       -0.6 [ -1.3,  +0.0]     -0.6 [ -1.4,  +0.0]     +0.8 [ -0.0,  +1.8]     -0.8 [ -1.8,  +0.0] 
+  verification: context only    +0.1 [ -0.5,  +0.7]     +0.0 [ -0.6,  +0.6]     +0.5 [ -0.4,  +1.4]     -0.6 [ -1.4,  +0.2] 
+Strong baseline + verif.       +11.2 [ +7.7, +14.6]*   +10.4 [ +6.8, +14.2]*    +2.1 [ +0.4,  +3.8]*    -2.0 [ -3.7,  -0.4]*
+Fixed RAG + verification       +20.9 [+16.9, +24.8]*   +17.0 [+13.0, +21.0]*    +4.0 [ +1.9,  +6.1]*    -3.3 [ -5.2,  -1.4]*
+
+F1 by question type (bridge n=403, comparison n=97, yes/no answers n=26)
+BM25 + LLM                   bridge  48.8   comparison  53.7   yes/no  65.4   span  48.9
+Fixed RAG (k=5)              bridge  40.7   comparison  50.4   yes/no  46.2   span  42.4
+RAG + Reranker               bridge  47.8   comparison  56.6   yes/no  57.7   span  49.1
+Strong reranker baseline     bridge  50.6   comparison  57.3   yes/no  69.2   span  50.9
+Heuristic Adaptive RAG        bridge  42.2   comparison  55.3   yes/no  61.5   span  43.8
+Proposed, no second hop      bridge  54.3   comparison  57.6   yes/no  73.1   span  54.0
+Proposed retrieval           bridge  65.3   comparison  56.9   yes/no  69.2   span  63.4
+Proposed + verification      bridge  65.3   comparison  58.1   yes/no  69.2   span  63.6
+  verification: hint only    bridge  66.1   comparison  57.9   yes/no  69.2   span  64.2
+  verification: context only bridge  65.2   comparison  57.9   yes/no  69.2   span  63.5
+Strong baseline + verif.     bridge  50.9   comparison  60.2   yes/no  73.1   span  51.6
+Fixed RAG + verification     bridge  40.8   comparison  52.1   yes/no  53.8   span  42.4
+
+Proposed (full): F1 when both gold paragraphs are in the context 69.5 (n=419), otherwise 33.4 (n=81)

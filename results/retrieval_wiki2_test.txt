@@ -1,0 +1,37 @@
+   title graph: 224654 edges; PPR discovers 14.7 passages per question
+computed in 18680s; 12.7 linked candidates per question
+
+wiki2 retrieval, split = test, n = 1000 (bridge_comparison 228, comparison 216, compositional 428, inference 128), corpus = 56661 paragraphs
+
+system                                                                      k  recall   both  answer  tokens bridge_comp  comparison composition   inference  d(both) vs Fixed RAG [95% CI]
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+BM25 (as in the paper: text, split tokens)                                5.0    33.0    9.2    27.5     415         0.0        24.1         5.8        11.7  -6.9 [-9.3, -4.5]
+BM25 (title + text, word tokens)                                          5.0    59.2   26.4    49.6     426         0.0        81.5        14.0        21.9  +10.3 [+7.7, +12.8]
+Fixed RAG: dense, text only                                               5.0    51.2   16.1    39.4     293         0.0        45.4        10.0        15.6  +0.0 [+0.0, +0.0]
+Dense, title + text                                                       5.0    53.8   18.3    40.7     297         0.0        50.9        11.9        17.2  +2.2 [+1.0, +3.4]
+RAG + Reranker: dense top-20 -> cross-encoder                             5.0    58.0   23.2    46.7     332         0.0        63.4        15.2        23.4  +7.1 [+5.4, +8.8]
+Strong reranker baseline: dense(title) top-50 -> cross-encoder            5.0    61.9   27.2    50.2     360         0.0        75.5        18.2        24.2  +11.1 [+9.0, +13.2]
+PROPOSED hop 1: fusion (BM25+dense, paragraph+sentence) -> cross-encoder  5.0    67.1   33.6    55.8     417         0.0        95.4        22.0        28.1  +17.5 [+15.1, +20.0]
+PROPOSED full: hop 1 + title-linked second hop                            5.0    79.4   52.4    73.9     399         3.1        94.9        61.4        38.3  +36.3 [+33.3, +39.4]
+BRIDGE-style: hop 1 -> PPR over title links -> unified cross-encoder rerank  5.0    67.8   34.6    56.9     418         0.0        95.4        24.3        28.1  +18.5 [+16.0, +21.0]
+Heuristic Adaptive RAG: dense, k = 7/8/10 from keyword effort              7.5    54.6   20.1    43.8     430         0.0        54.6        13.6        19.5  +4.0 [+2.9, +5.2]
+Fixed RAG at k = 10                                                      10.0    56.5   22.8    46.6     572         0.0        59.7        15.4        25.8  +6.7 [+5.2, +8.3]
+RAG + Reranker at k = 10                                                 10.0    59.8   26.5    51.8     625         0.0        64.8        19.2        33.6  +10.4 [+8.6, +12.4]
+PROPOSED full at k = 3                                                    3.0    72.7   42.9    63.5     230         0.0        80.6        51.9        25.8  +26.8 [+23.6, +30.1]
+
+PROPOSED full, difference in 'both' at k = 5:
+   vs Fixed RAG                 +36.3 [+33.3, +39.4]
+   vs RAG + Reranker            +29.2 [+26.2, +32.2]
+   vs strong reranker baseline  +25.2 [+22.4, +28.1]
+   vs BRIDGE-style PPR          +17.8 [+15.3, +20.5]
+
+Ablation of the proposed method (k = 5); d = difference in 'both' to the full method
+   full method                                        recall  79.4  both  52.4  answer  73.9   
+   no second hop                                      recall  67.1  both  33.6  answer  55.8   -18.8 [-21.4, -16.3]
+   second hop scored by question only (no path)       recall  78.3  both  51.9  answer  72.8   -0.5 [-3.0, +2.1]
+   no sentence-level lists                            recall  79.3  both  52.3  answer  74.2   -0.1 [-0.7, +0.5]
+   no BM25 lists (dense only)                         recall  77.3  both  49.8  answer  71.6   -2.6 [-3.8, -1.5]
+   no dense lists (BM25 only)                         recall  78.0  both  51.8  answer  72.7   -0.6 [-1.6, +0.4]
+   no cross-encoder on hop 1 (fusion order)           recall  76.1  both  48.0  answer  70.6   -4.4 [-6.2, -2.6]
+
+saved results/retrieval_wiki2_test.json

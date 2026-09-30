@@ -1,0 +1,28 @@
+follow-up queries 25/200
+follow-up queries 50/200
+follow-up queries 75/200
+follow-up queries 100/200
+follow-up queries 125/200
+follow-up queries 150/200
+follow-up queries 175/200
+follow-up queries 200/200
+HotpotQA tuning questions, n = 200, k = 5
+  first hop only                               both  60.0
+  title-linked second hop (proposed)           both  80.5
+  LLM-driven, query = followup           slots = 1  both  74.5
+  LLM-driven, query = followup           slots = 2  both  74.5
+  LLM-driven, query = question+followup  slots = 1  both  70.5
+  LLM-driven, query = question+followup  slots = 2  both  70.0
+examples of follow-up queries:
+   Q: Were Scott Derrickson and Ed Wood of the same nationality? 
+      -> What nationality is Ed Wood?
+   Q: What government position was held by the woman who portrayed Corliss Archer in the film Ki 
+      -> Who was the Secretary of State held by the woman who portrayed Corliss Archer in the film 
+   Q: What science fantasy young adult series, told in first person, has a set of companion book 
+      -> Series of companion books narrating the stories of enslaved worlds and alien species writt
+   Q: Are the Laleli Mosque and Esma Sultan Mansion located in the same neighborhood? 
+      -> What neighborhood is the Laleli Mosque located in?
+   Q: The director of the romantic comedy "Big Stone Gap" is based in what New York city? 
+      -> What is the director of the romantic comedy "Big Stone Gap" based in?
+   Q: 2014 S/S is the debut album of a South Korean boy group that was formed by who? 
+      -> Who formed the South Korean boy group that released the debut album 2014 S/S?

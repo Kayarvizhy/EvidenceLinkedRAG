@@ -1,0 +1,74 @@
+
+====================================================================================================
+HotpotQA
+
+HotpotQA: answer quality by question type (F1 in percent; All = all supporting paragraphs in the context)
+type                    n   Fixed  Strong  LLM hop   Ours   Ours - Strong [95% CI]     All strong  All ours
+bridge                403    40.7    50.6     59.9   65.3   +14.7 [+10.8, +18.7]*            50.9      82.6
+comparison             97    50.4    57.3     60.8   58.1    +0.8 [ -5.5,  +7.1]             82.5      92.8
+
+HotpotQA: second hop and verification (values in percent; difference = configuration minus full pipeline)
+configuration                                EM     F1  Unsupp.   F1 difference [95% CI]
+proposed pipeline                          45.8   63.9      3.7   
+without verification                       45.6   63.7      5.9    -0.2 [ -1.3,  +0.8] 
+without verification and second hop        36.8   55.0      7.5    -8.9 [-11.9,  -5.9]*
+verification: hint only                    46.4   64.5      4.5    +0.6 [ -0.0,  +1.3] 
+verification: wider context only           45.8   63.8      4.3    -0.1 [ -0.7,  +0.5] 
+
+HotpotQA: rejected first answers and effect of the refinement (F1 in percent)
+reason                          n  F1 first  F1 final
+abstention                      7       3.6       1.4
+type: yes/no expected           1       0.0       0.0
+type: date expected             3      26.7      60.0
+type: number expected           3       0.0      55.6
+low evidence overlap           21      30.0      23.6
+all rejected answers           35      21.0      24.3
+accepted answers              465      66.9      66.9
+generator calls per question: 1.07
+
+HotpotQA: classification of the final answers (n = 500)
+exact match                                                     229   45.8%
+partial match, answer contains the reference                     65   13.0%
+partial match, other                                             99   19.8%
+F1 = 0, yes/no reference                                          8    1.6%
+F1 = 0, abstention                                                3    0.6%
+F1 = 0, reference absent from the context (retrieval error)      25    5.0%
+F1 = 0, reference present in the context (reading error)         71   14.2%
+retrieval errors without the second hop: 77
+
+====================================================================================================
+2WikiMultihopQA
+
+2WikiMultihopQA: answer quality by question type (F1 in percent; All = all supporting paragraphs in the context)
+type                    n   Fixed  Strong  LLM hop   Ours   Ours - Strong [95% CI]     All strong  All ours
+compositional         213    10.6    15.9     26.6   35.0   +19.1 [+13.8, +24.4]*            18.8      67.6
+inference              65    35.6    40.1     40.6   45.7    +5.6 [ -0.6, +11.8]             27.7      44.6
+comparison            103    40.5    48.4     51.2   55.6    +7.2 [ +1.0, +13.4]*            75.7      96.1
+bridge_comparison     119    36.1    36.8     41.1   40.5    +3.7 [ -4.5, +11.9]              0.0       4.2
+
+2WikiMultihopQA: second hop and verification (values in percent; difference = configuration minus full pipeline)
+configuration                                EM     F1  Unsupp.   F1 difference [95% CI]
+proposed pipeline                          19.2   42.0      5.3   
+without verification                       17.2   39.4     10.1    -2.6 [ -4.1,  -1.1]*
+without verification and second hop         9.6   31.8     13.9   -10.2 [-13.3,  -7.0]*
+
+2WikiMultihopQA: rejected first answers and effect of the refinement (F1 in percent)
+reason                          n  F1 first  F1 final
+abstention                     34       0.8      19.8
+type: yes/no expected          12       0.0      58.3
+type: date expected             1       0.0       0.0
+type: number expected           1       0.0       0.0
+low evidence overlap           22      22.9      19.8
+all rejected answers           70       7.6      25.8
+accepted answers              430      44.6      44.6
+generator calls per question: 1.14
+
+2WikiMultihopQA: classification of the final answers (n = 500)
+exact match                                                      96   19.2%
+partial match, answer contains the reference                    149   29.8%
+partial match, other                                             46    9.2%
+F1 = 0, yes/no reference                                         29    5.8%
+F1 = 0, abstention                                               11    2.2%
+F1 = 0, reference absent from the context (retrieval error)      60   12.0%
+F1 = 0, reference present in the context (reading error)        109   21.8%
+retrieval errors without the second hop: 99

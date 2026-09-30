@@ -1,0 +1,48 @@
+   embedding mq_par: 0/21099
+   embedding mq_par: 12800/21099
+   embedding mq_sent: 0/78117
+   embedding mq_sent: 12800/78117
+   embedding mq_sent: 25600/78117
+   embedding mq_sent: 38400/78117
+   embedding mq_sent: 51200/78117
+   embedding mq_sent: 64000/78117
+   embedding mq_sent: 76800/78117
+   embedding mq_par_notitle: 0/21099
+   embedding mq_par_notitle: 12800/21099
+   title graph: 167160 edges; PPR discovers 14.2 passages per question
+computed in 19153s; 25.0 linked candidates per question
+
+musique retrieval, split = test, n = 1000 (2hop 520, 3hop 305, 4hop 175), corpus = 21099 paragraphs
+
+system                                                                      k  recall   both  answer  tokens        2hop        3hop        4hop  d(both) vs Fixed RAG [95% CI]
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+BM25 (as in the paper: text, split tokens)                                5.0    24.4    3.9    17.6     450         7.5         0.0         0.0  -5.1 [-7.0, -3.3]
+BM25 (title + text, word tokens)                                          5.0    38.8    8.6    23.4     453        16.0         1.0         0.0  -0.4 [-2.3, +1.5]
+Fixed RAG: dense, text only                                               5.0    42.0    9.0    31.5     422        16.2         2.0         0.0  +0.0 [+0.0, +0.0]
+Dense, title + text                                                       5.0    45.5   10.4    33.0     426        18.7         2.3         0.0  +1.4 [+0.0, +2.7]
+RAG + Reranker: dense top-20 -> cross-encoder                             5.0    48.1   14.6    37.1     423        25.0         5.2         0.0  +5.6 [+4.0, +7.3]
+Strong reranker baseline: dense(title) top-50 -> cross-encoder            5.0    53.2   18.0    40.5     439        28.8         9.8         0.0  +9.0 [+7.0, +11.0]
+PROPOSED hop 1: fusion (BM25+dense, paragraph+sentence) -> cross-encoder  5.0    54.8   19.8    41.6     452        31.9        10.5         0.0  +10.8 [+8.6, +13.0]
+PROPOSED full: hop 1 + title-linked second hop                            5.0    57.6   25.3    48.1     461        43.8         8.2         0.0  +16.3 [+13.8, +18.8]
+BRIDGE-style: hop 1 -> PPR over title links -> unified cross-encoder rerank  5.0    55.0   20.1    41.8     452        32.5        10.5         0.0  +11.1 [+8.9, +13.3]
+Heuristic Adaptive RAG: dense, k = 7/8/10 from keyword effort              7.2    46.2   12.3    36.0     609        21.2         4.3         0.0  +3.3 [+2.2, +4.4]
+Fixed RAG at k = 10                                                      10.0    49.7   14.9    40.1     847        24.8         6.6         0.0  +5.9 [+4.5, +7.4]
+RAG + Reranker at k = 10                                                 10.0    52.7   18.0    43.8     842        29.6         8.5         0.0  +9.0 [+7.1, +10.9]
+PROPOSED full at k = 3                                                    3.0    47.7   15.2    35.1     277        29.0         0.3         0.0  +6.2 [+3.8, +8.6]
+
+PROPOSED full, difference in 'both' at k = 5:
+   vs Fixed RAG                 +16.3 [+13.8, +18.8]
+   vs RAG + Reranker            +10.7 [+8.3, +13.0]
+   vs strong reranker baseline  +7.3 [+5.0, +9.6]
+   vs BRIDGE-style PPR          +5.2 [+3.2, +7.2]
+
+Ablation of the proposed method (k = 5); d = difference in 'both' to the full method
+   full method                                        recall  57.6  both  25.3  answer  48.1   
+   no second hop                                      recall  54.8  both  19.8  answer  41.6   -5.5 [-7.5, -3.5]
+   second hop scored by question only (no path)       recall  56.8  both  23.8  answer  46.1   -1.5 [-3.0, -0.1]
+   no sentence-level lists                            recall  57.6  both  25.8  answer  48.5   +0.5 [+0.0, +1.1]
+   no BM25 lists (dense only)                         recall  57.1  both  24.2  answer  47.5   -1.1 [-2.1, -0.1]
+   no dense lists (BM25 only)                         recall  53.6  both  22.8  answer  43.1   -2.5 [-3.8, -1.3]
+   no cross-encoder on hop 1 (fusion order)           recall  50.8  both  18.7  answer  38.1   -6.6 [-8.6, -4.6]
+
+saved results/retrieval_musique_test.json

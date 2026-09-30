@@ -1,9 +1,11 @@
-sentence-transformers
-faiss-cpu
-transformers
-torch
-ollama
-numpy
-tqdm
-pandas
-requests
+# Tested with Python 3.10 and the versions in the comments.
+torch            # 2.6.0 (CUDA 12.4 build); a CPU build works but is slow
+transformers     # 4.57.3
+numpy            # 1.26.4
+scipy            # 1.15.3
+pandas           # 2.3.2
+pyarrow          # 17.0.0
+requests         # 2.32.5
+datasets         # 4.0.0   only for download_data.py
+matplotlib       # 3.6.2   only for make_figure.py
+rank_bm25        # 0.2.2   only for retrieval_lib.check_bm25(), which verifies the BM25 implementation

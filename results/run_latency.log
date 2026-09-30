@@ -1,0 +1,22 @@
+10/100  bm25 3.45s  fixed 3.02s  rerank 3.44s  strong 3.69s  uamg_v1 6.65s  llm_hop 7.65s  hop1 3.18s  full 3.42s  full_v 3.61s
+20/100  bm25 3.65s  fixed 3.31s  rerank 3.52s  strong 3.77s  uamg_v1 5.99s  llm_hop 7.72s  hop1 3.34s  full 3.47s  full_v 3.90s
+30/100  bm25 3.65s  fixed 3.51s  rerank 3.49s  strong 3.66s  uamg_v1 5.73s  llm_hop 7.73s  hop1 3.37s  full 3.48s  full_v 3.83s
+40/100  bm25 3.64s  fixed 3.49s  rerank 3.47s  strong 3.54s  uamg_v1 5.33s  llm_hop 7.76s  hop1 3.37s  full 3.47s  full_v 3.71s
+50/100  bm25 3.62s  fixed 3.50s  rerank 3.48s  strong 3.55s  uamg_v1 5.25s  llm_hop 7.81s  hop1 3.41s  full 3.47s  full_v 3.62s
+60/100  bm25 3.64s  fixed 3.59s  rerank 3.49s  strong 3.50s  uamg_v1 5.43s  llm_hop 7.81s  hop1 3.39s  full 3.48s  full_v 3.58s
+70/100  bm25 3.63s  fixed 3.63s  rerank 3.54s  strong 3.54s  uamg_v1 5.49s  llm_hop 7.84s  hop1 3.42s  full 3.44s  full_v 3.63s
+80/100  bm25 3.65s  fixed 3.61s  rerank 3.54s  strong 3.54s  uamg_v1 5.29s  llm_hop 7.91s  hop1 3.42s  full 3.46s  full_v 3.63s
+90/100  bm25 3.66s  fixed 3.62s  rerank 3.52s  strong 3.51s  uamg_v1 5.19s  llm_hop 7.95s  hop1 3.42s  full 3.46s  full_v 3.66s
+100/100  bm25 3.69s  fixed 3.62s  rerank 3.53s  strong 3.52s  uamg_v1 5.12s  llm_hop 7.98s  hop1 3.44s  full 3.47s  full_v 3.64s
+
+mean seconds per question (retrieval / generation / total / LLM calls)
+  BM25 + LLM                     0.00   3.68   3.69  1.00
+  Fixed RAG (k=5)                0.03   3.60   3.62  1.00
+  RAG + Reranker                 0.06   3.46   3.53  1.00
+  Strong reranker baseline       0.13   3.39   3.52  1.00
+  Heuristic Adaptive RAG          0.04   5.08   5.12  1.40
+  LLM-driven second hop          0.40   7.59   7.98  2.00
+  Proposed, no second hop        0.18   3.25   3.44  1.00
+  Proposed retrieval             0.25   3.22   3.47  1.00
+  Proposed + verification        0.25   3.39   3.64  1.05
+EXIT 0

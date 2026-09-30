@@ -1,0 +1,100 @@
+detected intents: {'factual': 199, 'analytical': 1}
+1582 generations to run, 42 cached
+[25/1582] fixed    q   30 f1=1.00 elapsed 2 min, remaining about 104 min
+[50/1582] fixed    q   55 f1=0.00 elapsed 3 min, remaining about 106 min
+[75/1582] fixed    q   80 f1=0.00 elapsed 5 min, remaining about 102 min
+[100/1582] fixed    q  105 f1=1.00 elapsed 7 min, remaining about 100 min
+[125/1582] fixed    q  130 f1=1.00 elapsed 8 min, remaining about 99 min
+[150/1582] fixed    q  155 f1=0.12 elapsed 10 min, remaining about 98 min
+[175/1582] fixed    q  180 f1=0.00 elapsed 12 min, remaining about 97 min
+[200/1582] strong   q   11 f1=1.00 elapsed 14 min, remaining about 99 min
+[225/1582] strong   q   36 f1=1.00 elapsed 16 min, remaining about 97 min
+[250/1582] strong   q   61 f1=0.00 elapsed 18 min, remaining about 96 min
+[275/1582] strong   q   86 f1=1.00 elapsed 20 min, remaining about 94 min
+[300/1582] strong   q  111 f1=0.00 elapsed 22 min, remaining about 92 min
+[325/1582] strong   q  136 f1=1.00 elapsed 23 min, remaining about 90 min
+[350/1582] strong   q  161 f1=0.00 elapsed 26 min, remaining about 90 min
+[375/1582] strong   q  186 f1=0.20 elapsed 28 min, remaining about 89 min
+[400/1582] full     q   17 f1=1.00 elapsed 30 min, remaining about 88 min
+[425/1582] full     q   42 f1=1.00 elapsed 32 min, remaining about 86 min
+[450/1582] full     q   67 f1=1.00 elapsed 33 min, remaining about 84 min
+[475/1582] full     q   92 f1=0.50 elapsed 35 min, remaining about 81 min
+[500/1582] full     q  117 f1=0.00 elapsed 37 min, remaining about 79 min
+[525/1582] full     q  142 f1=0.80 elapsed 38 min, remaining about 77 min
+[550/1582] full     q  167 f1=1.00 elapsed 40 min, remaining about 75 min
+[575/1582] full     q  192 f1=0.00 elapsed 42 min, remaining about 73 min
+[600/1582] full_v   q   17 f1=1.00 elapsed 42 min, remaining about 70 min
+[625/1582] full_v   q   42 f1=1.00 elapsed 43 min, remaining about 65 min
+[650/1582] full_v   q   67 f1=1.00 elapsed 43 min, remaining about 62 min
+[675/1582] full_v   q   92 f1=0.50 elapsed 43 min, remaining about 58 min
+[700/1582] full_v   q  117 f1=0.00 elapsed 43 min, remaining about 54 min
+[725/1582] full_v   q  142 f1=0.80 elapsed 43 min, remaining about 51 min
+[750/1582] full_v   q  167 f1=1.00 elapsed 43 min, remaining about 48 min
+[775/1582] full_v   q  192 f1=0.00 elapsed 43 min, remaining about 45 min
+[800/1582] full_vh  q   17 f1=1.00 elapsed 44 min, remaining about 43 min
+[825/1582] full_vh  q   42 f1=1.00 elapsed 44 min, remaining about 40 min
+[850/1582] full_vh  q   67 f1=1.00 elapsed 44 min, remaining about 38 min
+[875/1582] full_vh  q   92 f1=0.50 elapsed 44 min, remaining about 35 min
+[900/1582] full_vh  q  117 f1=0.00 elapsed 44 min, remaining about 33 min
+[925/1582] full_vh  q  142 f1=0.80 elapsed 44 min, remaining about 31 min
+[950/1582] full_vh  q  167 f1=1.00 elapsed 44 min, remaining about 29 min
+[975/1582] full_vh  q  192 f1=0.00 elapsed 44 min, remaining about 28 min
+[1000/1582] full_vr  q   17 f1=1.00 elapsed 44 min, remaining about 26 min
+[1025/1582] full_vr  q   42 f1=1.00 elapsed 44 min, remaining about 24 min
+[1050/1582] full_vr  q   67 f1=1.00 elapsed 45 min, remaining about 23 min
+[1075/1582] full_vr  q   92 f1=0.50 elapsed 45 min, remaining about 21 min
+[1100/1582] full_vr  q  117 f1=0.00 elapsed 45 min, remaining about 20 min
+[1125/1582] full_vr  q  142 f1=0.80 elapsed 45 min, remaining about 18 min
+[1150/1582] full_vr  q  167 f1=1.00 elapsed 45 min, remaining about 17 min
+[1175/1582] full_vr  q  192 f1=0.00 elapsed 45 min, remaining about 16 min
+[1200/1582] strong_v q   17 f1=1.00 elapsed 45 min, remaining about 14 min
+[1225/1582] strong_v q   42 f1=0.00 elapsed 46 min, remaining about 13 min
+[1250/1582] strong_v q   67 f1=1.00 elapsed 46 min, remaining about 12 min
+[1275/1582] strong_v q   92 f1=0.55 elapsed 46 min, remaining about 11 min
+[1300/1582] strong_v q  117 f1=0.00 elapsed 46 min, remaining about 10 min
+[1325/1582] strong_v q  142 f1=0.80 elapsed 46 min, remaining about 9 min
+[1350/1582] strong_v q  167 f1=1.00 elapsed 47 min, remaining about 8 min
+[1375/1582] strong_v q  192 f1=0.00 elapsed 47 min, remaining about 7 min
+[1400/1582] fixed_v  q   17 f1=1.00 elapsed 48 min, remaining about 6 min
+[1425/1582] fixed_v  q   42 f1=0.00 elapsed 48 min, remaining about 5 min
+[1450/1582] fixed_v  q   67 f1=0.00 elapsed 48 min, remaining about 4 min
+[1475/1582] fixed_v  q   92 f1=0.55 elapsed 48 min, remaining about 4 min
+[1500/1582] fixed_v  q  117 f1=0.50 elapsed 49 min, remaining about 3 min
+[1525/1582] fixed_v  q  142 f1=0.80 elapsed 49 min, remaining about 2 min
+[1550/1582] fixed_v  q  167 f1=1.00 elapsed 49 min, remaining about 1 min
+[1575/1582] fixed_v  q  192 f1=0.00 elapsed 50 min, remaining about 0 min
+[1582/1582] fixed_v  q  199 f1=0.40 elapsed 50 min, remaining about 0 min
+
+hotpot / tune: n = 200; complete systems: ['fixed', 'strong', 'full', 'full_v', 'full_vh', 'full_vr', 'strong_v', 'fixed_v']; incomplete: ['bm25', 'rerank', 'uamg_v1', 'hop1']
+
+system                              EM        F1    RougeL  Contains   Overlap   Unsupp.  Evidence  ctx tok  calls  latency s
+Fixed RAG (k=5)                   33.5      45.0      44.9      43.5      79.4      11.3      28.5      392   1.00       4.33
+Strong reranker baseline          42.5      55.0      54.9      55.5      83.0       8.2      50.0      405   1.00       4.72
+Proposed retrieval                50.0      64.6      64.7      63.0      87.4       4.3      80.5      381   1.00       4.35
+Proposed + verification           51.5      66.4      66.5      64.5      89.4       1.9      81.5      394   1.06       4.67
+  verification: hint only         51.5      65.9      66.0      64.0      87.5       3.8      80.5      381   1.06       4.57
+  verification: context only      50.5      65.5      65.6      63.5      89.8       2.0      81.5      393   1.06       4.61
+Strong baseline + verif.          43.5      56.3      56.2      56.5      85.8       4.7      50.5      428   1.12       5.32
+Fixed RAG + verification          36.5      47.8      47.7      45.5      81.4       9.1      30.0      431   1.18       5.19
+
+Proposed + verification minus other system, paired bootstrap 95% CI (* = interval excludes zero)
+                                                  F1                      EM                 Overlap             Unsupported
+Fixed RAG (k=5)                +21.4 [+15.1, +27.7]*   +18.0 [+11.5, +24.5]*   +10.0 [ +6.1, +14.1]*    -9.4 [-13.3,  -5.8]*
+Strong reranker baseline       +11.4 [ +6.2, +16.7]*    +9.0 [ +3.5, +14.5]*    +6.5 [ +3.3, +10.0]*    -6.4 [ -9.7,  -3.4]*
+Proposed retrieval              +1.8 [ +0.3,  +3.8]*    +1.5 [ +0.0,  +3.5]     +2.0 [ -0.1,  +4.4]     -2.4 [ -4.7,  -0.7]*
+  verification: hint only       +0.5 [ -0.7,  +2.0]     +0.0 [ -1.5,  +1.5]     +1.9 [ +0.3,  +4.0]*    -1.9 [ -4.0,  -0.3]*
+  verification: context only    +0.9 [ -0.3,  +2.5]     +1.0 [ +0.0,  +2.5]     -0.3 [ -1.5,  +0.5]     -0.1 [ -0.4,  +0.0] 
+Strong baseline + verif.       +10.1 [ +5.0, +15.2]*    +8.0 [ +2.5, +13.5]*    +3.6 [ +0.8,  +6.6]*    -2.8 [ -5.7,  -0.0]*
+Fixed RAG + verification       +18.6 [+12.3, +24.9]*   +15.0 [ +8.5, +21.5]*    +8.0 [ +4.3, +12.0]*    -7.2 [-11.0,  -3.6]*
+
+F1 by question type (bridge n=166, comparison n=34, yes/no answers n=17)
+Fixed RAG (k=5)              bridge  40.7   comparison  66.1   yes/no  82.4   span  41.5
+Strong reranker baseline     bridge  53.0   comparison  64.6   yes/no  76.5   span  53.0
+Proposed retrieval           bridge  64.5   comparison  64.8   yes/no  76.5   span  63.4
+Proposed + verification      bridge  66.1   comparison  67.8   yes/no  82.4   span  64.9
+  verification: hint only    bridge  65.5   comparison  67.8   yes/no  82.4   span  64.4
+  verification: context only bridge  65.6   comparison  64.8   yes/no  76.5   span  64.5
+Strong baseline + verif.     bridge  53.4   comparison  70.4   yes/no  82.4   span  53.9
+Fixed RAG + verification     bridge  43.4   comparison  69.0   yes/no  88.2   span  44.0
+
+Proposed (full): F1 when both gold paragraphs are in the context 72.7 (n=161), otherwise 30.9 (n=39)
